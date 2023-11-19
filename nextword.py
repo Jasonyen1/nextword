@@ -12,8 +12,8 @@ import nltk
 from nltk.tokenize import word_tokenize
 
 import os
-import keras_nlp
-import keras_core as keras
+#import keras_nlp
+#import keras_core as keras
 import time
 
 
@@ -206,15 +206,18 @@ def import_gpt():
 setup()
 model, index_to_word, word_to_index, max_sequence_len = import_amazon_gru()
 
-if 'gpt' not in st.session_state:
-    preprocessor = keras_nlp.models.GPT2CausalLMPreprocessor.from_preset(
-        "gpt2_base_en",
-        sequence_length=128,
-    )
-    gpt2_lm = keras_nlp.models.GPT2CausalLM.from_preset(
-        "gpt2_base_en", preprocessor=preprocessor
-    )
-    st.session_state.gpt = gpt2_lm
+def hide():
+    """
+    if 'gpt' not in st.session_state:
+        preprocessor = keras_nlp.models.GPT2CausalLMPreprocessor.from_preset(
+            "gpt2_base_en",
+            sequence_length=128,
+        )
+        gpt2_lm = keras_nlp.models.GPT2CausalLM.from_preset(
+            "gpt2_base_en", preprocessor=preprocessor
+        )
+        st.session_state.gpt = gpt2_lm
+    """
 
 #import_gpt()
 #compile_compute_graph()
