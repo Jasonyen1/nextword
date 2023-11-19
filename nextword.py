@@ -13,7 +13,7 @@ from nltk.tokenize import word_tokenize
 
 import os
 #import keras_nlp
-import keras_core as keras
+#import keras_core as keras
 import time
 
 
