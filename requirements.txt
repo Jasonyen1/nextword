@@ -64,7 +64,7 @@ jupyter_client==7.3.5
 jupyterlab-pygments==0.2.2
 keras==2.14.0
 keras-core==0.1.7
-keras-nlp @ git+https://github.com/keras-team/keras-nlp.git@11bece833200548c181810980ff50546da4d748a
+keras-nlp @ git+https://github.com/keras-team/keras-nlp.git
 Keras-Preprocessing==1.1.2
 kiwisolver==1.4.4
 lazy-object-proxy==1.9.0
